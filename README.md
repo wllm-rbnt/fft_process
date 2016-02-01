@@ -1,12 +1,14 @@
 # Sorting logs using FFT
 
 ## Ubuntu 14.04.03 LTS x86_64
-apt-get install build-essential
-apt-get install libfftw3-dev
-make
+
+    apt-get install build-essential
+    apt-get install libfftw3-dev
+    make
 
 ## Usage
-./fft_process -o 1 -n -c 4 < logfile
+
+    ./fft_process -o 1 -n -c 4 < logfile
 
 ## Screenshots
 Graph representation of some data generated from typical log files on a GNU/Linux system

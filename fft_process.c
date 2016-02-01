@@ -9,10 +9,10 @@
 #define COUNT 3
 
 void usage() {
-    printf("Usage: ./fft_process [-h] [-n] [-i] [-l max_input_length] [-o output_offset] [-c output_count]\n");
+    printf("Usage: ./fft_process [-h] [-n] [-i] [-l max_input_length] [-o output_offset] [-c output_count] < log_file\n");
     printf("\t-h\tShow this help\n");
     printf("\t-n\tPrefix output with line number\n");
-    printf("\t-l\tMaximum input length in chars (defaults to 120)\n");
+    printf("\t-l\tMaximum input length in chars for each line (defaults to 120)\n");
     printf("\t-o\tOutput offset in chars (defaults to 0)\n");
     printf("\t-c\tOutput count (defaults to 3)\n");
     printf("\t-i\tOutput imaginary part instead of the real part for each output value (defaults to real)\n");

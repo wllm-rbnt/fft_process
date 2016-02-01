@@ -1,12 +1,21 @@
 # Sorting logs using FFT
 
-## Ubuntu 14.04.03 LTS x86_64
+## Compilation on Ubuntu 14.04.03 LTS x86_64
 
     apt-get install build-essential
     apt-get install libfftw3-dev
     make
 
 ## Usage
+
+    $ ./fft_process -h
+    Usage: ./fft_process [-h] [-n] [-i] [-l max_input_length] [-o output_offset] [-c output_count]
+        -h      Show this help
+        -n      Prefix output with line number
+        -l      Maximum input length in chars (defaults to 120)
+        -o      Output offset in chars (defaults to 0)
+        -c      Output count (defaults to 3)
+        -i      Output imaginary part instead of the real part for each output value (defaults to real)
 
     $ ./fft_process -o 1 -n -c 4 < logfile
 

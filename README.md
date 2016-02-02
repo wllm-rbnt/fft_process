@@ -17,7 +17,8 @@ Basically, the Fourier Transform of a function is a decomposition of this
 function into the different frequencies that make it up (Source
 https://en.wikipedia.org/wiki/Fourier_transform).
 This decomposition is a sum of sinuses of different frequencies and amplitudes,
-some of them being more significant than others. 
+some of them (the lower frequencies) being more significant than others at
+shaping the main characteristics of the original function.
 
 Fast Fourier Transform (FFT) is an algorithm that applies a Fourier Transform
 to discrete series.
@@ -31,7 +32,8 @@ their most significant components in order to identify and classify them.
 
 Incoming log lines could then be matched against interesting pre-defined
 regions of a n-dimensional space, n being the number of significant components
-extracted from the FFT.
+extracted from the FFT (i.e. a prefix of the resulting FFT, reprensenting the
+lower frequency components).
 
 ## Status
 

@@ -32,13 +32,14 @@ their most significant components in order to identify and classify them.
 
 Incoming log lines could then be matched against interesting pre-defined
 regions of a n-dimensional space, n being the number of significant components
-extracted from the FFT (i.e. a prefix of the resulting FFT, reprensenting the
+extracted from the FFT (i.e. a prefix of the resulting FFT, representing the
 lower frequency components).
 
 ## Status
 
-This code is an early proof of concept. It lacks proper error checking here and
-there and it's probably not very efficient.
+This is just an early idea, not even a proof of concept. The code lacks proper
+error checking here and there and is probably not very efficient. Usefulness
+of this has yet to be demonstrated.
 
 ## Compilation
 

@@ -2,14 +2,14 @@
 
 ## Idea
 
-In order to classify logs, details can often be simply omitted.
+In order to classify logs, details can often simply be omitted.
 For instance, a trained eye will see the following log line, coming from a
 running GNU/Linux kernel, as a potential problem.
 
     ata0.00: end_request: I/O error, dev sda, sector 25373542
 
 The brain of the system administrator recognises the shape of the log line
-without (and before) having to see the details.
+without (and before) seeing the details.
 
     ____.__: end_request: I/O error, dev ___, sector ________
 
@@ -27,8 +27,8 @@ A log line can be seen as a discrete series, a random function y = f(x) with x
 being the offset of a char in that log line and y the value of this char
 expressed as an integer.
 
-The idea behind this proof of concept is to apply FFT to log lines and keep
-their most significant components in order to identify and classify them.
+The idea is to apply FFT to log lines and keep their most significant
+components in order to identify and classify them.
 
 Incoming log lines could then be matched against interesting pre-defined
 regions of a n-dimensional space, n being the number of significant components
